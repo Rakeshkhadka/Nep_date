@@ -16,6 +16,7 @@ class DateField(serializers.DateField):
             nepali_date_parts = [int(part) for part in data.split('-')]
             nepalidate = nepali_date(*nepali_date_parts)
             greg_date = nepalidate.to_datetime_date()
+            print(greg_date)
             return greg_date
         return super().to_internal_value(data)
 
