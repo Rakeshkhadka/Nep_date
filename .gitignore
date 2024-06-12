@@ -1,0 +1,4 @@
+venv/
+db.sqplite3
+
+__pycache__/
