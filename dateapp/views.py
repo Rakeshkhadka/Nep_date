@@ -14,4 +14,4 @@ from rest_framework.viewsets import ModelViewSet
 class EventViewSet(ModelViewSet):
     queryset = Event.objects.all()
     serializer_class = EventSerializer
-    permission_classes = [IsAuthenticated]
+    permission_classes = []
